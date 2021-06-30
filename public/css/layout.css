@@ -632,6 +632,9 @@ ul#nav li.current a {
   margin-left: 24px;
 }
 
+.paypal-buttons {
+  min-width: auto !important;
+}
 /* fadein/fadeout effect for modal popup
 /* ------------------------------------------------------------------ */
 

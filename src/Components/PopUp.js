@@ -1,4 +1,5 @@
 import React from "react";
+import { useAlert } from 'react-alert'
 
 export default function PopUp(props) {
   const [paid, setPaid] = React.useState(false);
@@ -12,7 +13,7 @@ export default function PopUp(props) {
    };
 
    const handleNameChange = (e) => {
-    
+    alert.show('Oh look, an alert!')
      name = e;
 
     //  if(e == "")
@@ -26,7 +27,6 @@ export default function PopUp(props) {
    };
 
    const handleEmailChange = (e) => {
-   
     email = e;
    };
 
@@ -65,7 +65,8 @@ export default function PopUp(props) {
   if (paid) {
     console.log(name);
     console.log(email);
-    return <div>{name} Payment successfulhhhkkhk.!</div>;
+    alert.show('Oh look, an alert!');
+    //return <div>Payment successful!</div>;
 
   }
 

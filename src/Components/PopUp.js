@@ -2,25 +2,32 @@ import React from "react";
 
 export default function PopUp(props) {
   const [paid, setPaid] = React.useState(false);
-  const [error, setError] = React.useState(null);
+  const [error] = React.useState(null);
   const paypalRef = React.useRef();
   let dynamicClassName= "false";
-  const name = "";
-  const email = "";
+  let name = "";
+  let email = "";
   const handleClick = () => {
     props.toggle();
    };
 
-   const handleChange = (e) => {
-     console.log(e);
-     if(e == "")
-     {
-      dynamicClassName = "false";
-     }
-     else
-     {
-      dynamicClassName = "true";
-     }
+   const handleNameChange = (e) => {
+    
+     name = e;
+
+    //  if(e == "")
+    //  {
+    //   dynamicClassName = "false";
+    //  }
+    //  else
+    //  {
+    //   dynamicClassName = "true";
+    //  }
+   };
+
+   const handleEmailChange = (e) => {
+   
+    email = e;
    };
 
   // To show PayPal buttons once the component loads
@@ -57,8 +64,8 @@ export default function PopUp(props) {
   // If the payment has been made
   if (paid) {
     console.log(name);
-
-    return <div>{name} Payment successful.!</div>;
+    console.log(email);
+    return <div>{name} Payment successfulhhhkkhk.!</div>;
 
   }
 
@@ -85,9 +92,9 @@ export default function PopUp(props) {
                       type="text"
                       defaultValue=""
                       size="35"
-                      id="contactName"
-                      name="contactName"
-                      onChange={event => handleChange(event.target.value)}
+                      id="payerName"
+                      name="payerName"
+                      onChange={event => handleNameChange(event.target.value)}
                     required/>
                   </div>
 
@@ -99,12 +106,12 @@ export default function PopUp(props) {
                       type="text"
                       defaultValue=""
                       size="35"
-                      id="contactEmail"
-                      name="contactEmail"
-                      onChange={event => handleChange(event.target.value)}
+                      id="payerMail"
+                      name="payerName"
+                      onChange={event => handleEmailChange(event.target.value)}
                     required/>
                   </div>
-      <div className={dynamicClassName == "true"? "enabledBtn " : "disableBtn"} ref={paypalRef} />
+      <div className={dynamicClassName === "true"? "enabledBtn " : "disableBtn"} ref={paypalRef} />
        </div>
        </div>
      </div>

@@ -7,14 +7,12 @@ class EventHost extends Component{
     this.changeEventList = this.changeEventList.bind(this);
   }
   changeEventList() {
-    console.log('Inside the called function');
+    
   }
     render(){
 
         if (!this.props.data) return null;
         //const eventHost = this.props.data.events;
-        console.log("Event Data");
-        console.log(this.props.data.events);
         const eventHost = this.props.data.events.map(function (item) {
             return (
               <div className="row eachEvent" >
@@ -54,7 +52,7 @@ class EventHost extends Component{
                     </li>
 
                     <li>
-                      <a className="smoothscroll" href='javascript:void(0)' onClick={this.changeEventList()}>
+                      <a className="smoothscroll" href onClick={this.changeEventList()}>
                         Upcoming
                       </a>
                     </li>

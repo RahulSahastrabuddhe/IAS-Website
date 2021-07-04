@@ -2,7 +2,6 @@ import React, {Component} from "react";
 
 class Logo extends Component {
     render(){
-        console.log(this.props.logolink);
         return(
             <>
                 <img id="logo"

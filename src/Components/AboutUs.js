@@ -14,7 +14,6 @@ class AboutUs extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const skillmessage = this.props.data.skillmessage;
     const who = this.props.data.who.map(function (who) {
       return (
           <p>{who.description}</p>

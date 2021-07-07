@@ -12,7 +12,7 @@ class Advisor extends Component {
     const city = this.props.data.address.city;
     const state = this.props.data.address.state;
     const zip = this.props.data.address.zip;
-    const phone = this.props.data.phone;
+    // const phone = this.props.data.phone;
     const email = this.props.data.email;
 
     return (
@@ -43,8 +43,8 @@ class Advisor extends Component {
                       <br />
                       {city} {state}, {zip}
                     </span>
-                    <br />
-                    <span>{phone}</span>
+                    {/* <br />
+                    <span>{phone}</span> */}
                     <br />
                     <span>{email}</span>
                   </p>

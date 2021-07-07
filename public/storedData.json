@@ -1,6 +1,6 @@
 {
   "main": {
-    "name":"Intelligent Analytics Society",
+    "name":"Intelligence Analytics Society",
     "description":"IAS is a platform for making technologies prevalent in the industry available to UTD students and alumnis.",
     "image":"profilepic.jpg",
     "bio":"   The IAS is an organization for both Graduate and Undergraduate Students. Total No of Active members are 400+.The IAS is being established to advance the professional goals of our students aspiring for BI- related roles with their future employing organizations. The two avenues through which these goal -s will be furthered are education and networking. The former includes the offering of hands-on BI tool use at meetings, on-line review material, and connections with experts. The latter involves inter -actions with club members who share the same interests and opportunities to engage with outside professionals at both IAS and other BI events. Together such opportunities provide our members with a competitive advantage when both pursuing jobs and performing their jobs once obtained.",
@@ -78,17 +78,18 @@
         "url":"https://www.linkedin.com/in/swapnesh-walunj/"
       },
       {
-        "title":"Amruta Ranade",
-        "category":"General Secretary",
-        "image":"amruta.jpg",
-        "url":"https://www.linkedin.com/in/amrutaranade25/"
-      },
-      {
         "title":"Nivedita Deshpande",
-        "category":"Treasurer",
+        "category":"General Secretary",
         "image":"nivedita.jpg",
         "url":"https://www.linkedin.com/in/nivedita-deshpande/"
+      },
+      {
+        "title":"Amruta Ranade",
+        "category":"Treasurer",
+        "image":"amruta.jpg",
+        "url":"https://www.linkedin.com/in/amrutaranade25/"
       }
+      
     ]
   },
   "eventHost":{

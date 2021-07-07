@@ -122,16 +122,14 @@ class Contact extends Component {
                 <ul id="twitter">
                   <li>
                     <span>
-                      This is Photoshop's version of Lorem Ipsum. Proin gravida
-                      nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-                      quis bibendum auctor, nisi elit consequat ipsum
-                      <a href="./">http://t.co/CGIrdxIlI3</a>
+                    The Intelligence Analytic Society is hosting an event with Lohit Pratap Singh. Lohit is currently working with Amazon as a Senior Product Manager. He is a dedicated Alumnus of our university as well as the former President of the IAS club.
+                      <a href="https://lnkd.in/ea7tEtk" target="_blank">https://lnkd.in/ea7tEtk</a>
                     </span>
                     <b>
                       <a href="./">2 Days Ago</a>
                     </b>
                   </li>
-                  <li>
+                  {/* <li>
                     <span>
                       Sed ut perspiciatis unde omnis iste natus error sit
                       voluptatem accusantium doloremque laudantium, totam rem
@@ -142,7 +140,7 @@ class Contact extends Component {
                     <b>
                       <a href="./">3 Days Ago</a>
                     </b>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </aside>

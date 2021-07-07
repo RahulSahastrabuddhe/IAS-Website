@@ -98,6 +98,7 @@ header .social {
   margin: 24px 0;
   padding: 0;
   font-size: 30px;
+  pointer-events: none;
 }
 header .social li {
   display: inline-block;
@@ -556,6 +557,7 @@ ul#nav li.current a {
 .portfolio-item .item-wrap img {
   vertical-align: bottom;
   height: 200px;
+  width: fit-content;
 }
 .portfolio-item .portfolio-item-meta {
   padding: 18px;
@@ -1178,10 +1180,12 @@ footer .social-links li:first-child {
 .eachEvent {
   margin-bottom: 48px;
   padding-bottom: 24px;
+  padding-left: 15px;
   border-bottom: 1px solid #e8e8e8;
 }
 .eventTime a {
   color: black !important;
+  text-decoration: underline;
 }
 
 .popup .modal {

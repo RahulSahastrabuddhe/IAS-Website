@@ -4,7 +4,7 @@
     "description":"IAS is a platform for making technologies prevalent in the industry available to UTD students and alumnis.",
     "image":"profilepic.jpg",
     "bio":"   The IAS is an organization for both Graduate and Undergraduate Students. Total No of Active members are 400+.The IAS is being established to advance the professional goals of our students aspiring for BI- related roles with their future employing organizations. The two avenues through which these goal -s will be furthered are education and networking. The former includes the offering of hands-on BI tool use at meetings, on-line review material, and connections with experts. The latter involves inter -actions with club members who share the same interests and opportunities to engage with outside professionals at both IAS and other BI events. Together such opportunities provide our members with a competitive advantage when both pursuing jobs and performing their jobs once obtained.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "contactmessage":"Have a doubt? Get in contact with us.",
     "email": "utd@utdallas.edu",
     "phone": "555-555-5555",
     "paymentIAS":"https://www.paypal.com/paypalme/IAC4Registeration",
@@ -66,52 +66,62 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"01.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"Shriniwas Suram",
+        "category":"President",
+        "image":"shriniwas.jpg",
+        "url":"https://www.linkedin.com/in/shriniwassuram/"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"Swapnesh Walunj",
+        "category":"Vice President",
+        "image":"swapnesh.jpg",
+        "url":"https://www.linkedin.com/in/swapnesh-walunj/"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+        "title":"Amruta Ranade",
+        "category":"General Secretary",
+        "image":"amruta.jpg",
+        "url":"https://www.linkedin.com/in/amrutaranade25/"
       },
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"Nivedita Deshpande",
+        "category":"Treasurer",
+        "image":"nivedita.jpg",
+        "url":"https://www.linkedin.com/in/nivedita-deshpande/"
       }
     ]
   },
   "eventHost":{
     "events": [
       {
+        "title":"Alumni Talks",
+        "purpose": "A wonderful opportunity to gain foundational knowledge needed to adapt towards developing valuable skills for IT employers.",
+        "eventDate":"07/07/2021",
+        "url":"https://lnkd.in/ea7tEtk"
+      },
+      {
         "title":"Artificial Intelligence Simplified ",
         "purpose": "(How AI cloud services is simplifying the use and development of AI applications for your startups and next big idea)",
-        "eventDate":"10/28/2021" 
+        "eventDate":"06/28/2021",
+        "url":"https://lnkd.in/ea7tEtk"
       },
       {
         "title":"Anaplan - Connected Planning Tool ",
         "purpose": "(Workshop by Professionals from Cervello)",
-        "eventDate":"11/04/2021" 
+        "eventDate":"04/04/2021",
+        "url":"https://lnkd.in/ea7tEtk"
       },
       {
         "title":"Alteryx Workshop ",
         "purpose": "(Hands On Session by Ravi Chaubey)",
-        "eventDate":"05/28/2021" 
+        "eventDate":"03/28/2021",
+        "url":"https://lnkd.in/ea7tEtk" 
       },
       {
         "title":"Data Camp Lottery",
         "purpose": "Data Camp Premium subscriptions given out to 35 IAS members.",
-        "eventDate":"09/16/2021" 
+        "eventDate":"01/16/2021",
+        "url":"https://lnkd.in/ea7tEtk" 
       }
     ]
   }

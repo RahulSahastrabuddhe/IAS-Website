@@ -89,7 +89,7 @@ class Header extends Component {
             <hr />
             <Fade bottom duration={2000}>
               <div className="banner-video">
-              <ReactPlayer muted={true} width = {480} height = {270} className="banner-video"
+              <ReactPlayer muted={false} width = {480} height = {270} className="banner-video"
                 url="https://www.youtube.com/embed/SCOHR_Owj74"
               />
               </div>
@@ -97,10 +97,10 @@ class Header extends Component {
 
             <Fade bottom duration={2000}>
               <ul className="social">
-                <a href onClick={this.togglePop}  className="button btn member-btn">
+                <a href="" onClick={this.togglePop}  className="button btn member-btn">
                   <i className="fa fa-book"></i>Become A Member
                 </a>
-                <a href={paymentIAS} className="button btn payment-btn">
+                <a href="" className="button btn payment-btn">
                 <i class="fa fa-money"></i>Payment for IAS
                 </a>
               </ul>

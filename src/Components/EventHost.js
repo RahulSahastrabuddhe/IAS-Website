@@ -23,7 +23,7 @@ class EventHost extends Component{
                   
             <div className="nine columns main-col">
               <div className="row item">
-                <div className="twelve columns"><a href={item.url} target="_blank"><p>{item.title}</p></a><p>{item.purpose}</p></div>
+                <div className="twelve columns"><a href={item.url} target="_blank" rel="noreferrer"><p>{item.title}</p></a><p>{item.purpose}</p></div>
               </div>
             </div>
                   <div className="three columns header-col">
@@ -44,13 +44,13 @@ class EventHost extends Component{
                     <div className="eventTime">
                     <ul id="nav" className="nav">
                     <li>
-                      <a className="smoothscroll" onClick={this.changeEventList()} >
+                      <a className="smoothscroll" href="./" onClick={this.changeEventList()} >
                         Upcoming
                       </a>
                     </li>
 
                     <li>
-                      <a className="smoothscroll" href onClick={this.changeEventList()}>
+                      <a className="smoothscroll" href="./" onClick={this.changeEventList()}>
                       Past
                       </a>
                     </li>

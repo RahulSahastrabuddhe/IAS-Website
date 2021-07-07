@@ -17,7 +17,7 @@ class Header extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const paymentIAS = this.props.data.paymentIAS;
+    // const paymentIAS = this.props.data.paymentIAS;
     const name = this.props.data.name;
     const description = this.props.data.description;
     
@@ -97,10 +97,10 @@ class Header extends Component {
 
             <Fade bottom duration={2000}>
               <ul className="social">
-                <a href="" onClick={this.togglePop}  className="button btn member-btn">
+                <a href onClick={this.togglePop}  className="button btn member-btn">
                   <i className="fa fa-book"></i>Become A Member
                 </a>
-                <a href="" className="button btn payment-btn">
+                <a href className="button btn payment-btn">
                 <i class="fa fa-money"></i>Payment for IAS
                 </a>
               </ul>

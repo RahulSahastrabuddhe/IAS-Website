@@ -123,7 +123,7 @@ class Contact extends Component {
                   <li>
                     <span>
                     The Intelligence Analytic Society is hosting an event with Lohit Pratap Singh. Lohit is currently working with Amazon as a Senior Product Manager. He is a dedicated Alumnus of our university as well as the former President of the IAS club.
-                      <a href="https://lnkd.in/ea7tEtk" target="_blank">https://lnkd.in/ea7tEtk</a>
+                      <a href="https://lnkd.in/ea7tEtk" target="_blank" rel="noreferrer">https://lnkd.in/ea7tEtk</a>
                     </span>
                     <b>
                       <a href="./">2 Days Ago</a>

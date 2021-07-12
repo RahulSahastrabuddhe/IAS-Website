@@ -83,7 +83,7 @@ class Header extends Component {
               <h2 className="responsive-headline">{name}</h2>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>{description}.</h3>
+              <h3>{description}</h3>
             </Fade>
             
             <hr />
@@ -100,9 +100,9 @@ class Header extends Component {
                 <a href onClick={this.togglePop}  className="button btn member-btn">
                   <i className="fa fa-book"></i>Become A Member
                 </a>
-                <a href className="button btn payment-btn">
+                {/* <a href className="button btn payment-btn">
                 <i class="fa fa-money"></i>Payment for IAS
-                </a>
+                </a> */}
               </ul>
             </Fade>
             

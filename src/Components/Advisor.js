@@ -5,15 +5,10 @@ class Advisor extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const name = this.props.data.name;
     const profilepic = "images/ravi_narayan.png" ;
     const bio = this.props.data.bio;
-    const street = this.props.data.address.street;
-    const city = this.props.data.address.city;
-    const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
+   
     // const phone = this.props.data.phone;
-    const email = this.props.data.email;
 
     return (
       <section id="about">
@@ -25,7 +20,8 @@ class Advisor extends Component {
                 src={profilepic}
                 alt="ravi_narayan"
               />
-              <p style={{font: "opensans-semibold", color:"red"}}>Ravishankar Narayan, PHD</p>
+              {/* style={{font: "opensans-semibold", color:"red"}} marginleft:"20px"*/}
+              <p style={{font: "opensans-semibold",marginLeft:"-20px" }} >Ravishankar Narayan, PHD</p>
               <p>Assistant Professor Information System</p>
             </div>
             <div className="nine columns main-col">
@@ -34,20 +30,7 @@ class Advisor extends Component {
               <p className="advisor-info">{bio}</p>
               <div className="row">
                 <div className="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p className="address">
-                    <span>{name}</span>
-                    <br />
-                    <span>
-                      {street}
-                      <br />
-                      {city} {state}, {zip}
-                    </span>
-                    {/* <br />
-                    <span>{phone}</span> */}
-                    <br />
-                    <span>{email}</span>
-                  </p>
+                 
                 </div>
                 {/* <div className="columns download">
                   <p>

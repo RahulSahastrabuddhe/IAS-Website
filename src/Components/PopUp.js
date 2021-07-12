@@ -1,4 +1,7 @@
 import React from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+//import emailjs from "emailjs-com";
 
 export default function PopUp(props) {
   const [paid, setPaid] = React.useState(false);
@@ -13,7 +16,7 @@ export default function PopUp(props) {
 
    const handleNameChange = (e) => {
      name = e;
-
+    console.log(name);
     //  if(e == "")
     //  {
     //   dynamicClassName = "false";
@@ -26,6 +29,7 @@ export default function PopUp(props) {
 
    const handleEmailChange = (e) => {
     email = e;
+    console.log(email);
    };
 
   // To show PayPal buttons once the component loads
@@ -40,7 +44,7 @@ export default function PopUp(props) {
                 description: "IAS Membership",
                 amount: {
                   currency_code: "USD",
-                  value: 5.0,
+                  value: 10.0,
                 },
               },
             ],
@@ -61,10 +65,14 @@ export default function PopUp(props) {
 
   // If the payment has been made
   if (paid) {
-    console.log(name);
-    console.log(email);
-    return <div>Payment successful!</div>;
-
+    toast("Payment Successfull. We will contact you soon:)");
+    // emailjs.sendForm('service_wb10qzj', 'template_macz4el', "dasd", 'user_EbsHvfEErVslPnqCBOmiN')
+    // .then((result) => {
+    //     console.log(result.text);
+    // }, (error) => {
+    //     console.log(error.text);
+    // });
+    // return null;
   }
 
   // If any error occurs
@@ -75,6 +83,7 @@ export default function PopUp(props) {
   // Default Render
   return (
     <div className="popup">
+    <ToastContainer/>
     <div className="modal">
      <div className="modal_content">
      <span className="close" onClick={handleClick}>&times;    </span>

@@ -1,9 +1,9 @@
 {
   "main": {
     "name":"Intelligence Analytics Society",
-    "description":"IAS is a platform for making technologies prevalent in the industry available to UTD students and alumnis.",
+    "description":"IAS is a platform for making technologies prevalent in the industry available to UTD students and alumnis",
     "image":"profilepic.jpg",
-    "bio":"   The IAS is an organization for both Graduate and Undergraduate Students. Total No of Active members are 400+.The IAS is being established to advance the professional goals of our students aspiring for BI- related roles with their future employing organizations. The two avenues through which these goal -s will be furthered are education and networking. The former includes the offering of hands-on BI tool use at meetings, on-line review material, and connections with experts. The latter involves inter -actions with club members who share the same interests and opportunities to engage with outside professionals at both IAS and other BI events. Together such opportunities provide our members with a competitive advantage when both pursuing jobs and performing their jobs once obtained.",
+    "bio":"   The IAS is an organization for both Graduate and Undergraduate Students. Total No of Active members are 400+.The IAS is being established to advance the professional goals of our students aspiring for BI-related roles with their future employing organizations. The two avenues through which these goals will be furthered are education and networking. The former includes the offering of hands-on BI tool use at meetings, online review material, and connections with experts. The latter involves inter-actions with club members who share the same interests and opportunities to engage with outside professionals at both IAS and other BI events. Together such opportunities provide our members with a competitive advantage when both pursuing jobs and performing their jobs once obtained.",
     "contactmessage":"Have a doubt? Get in contact with us.",
     "email": "utd@utdallas.edu",
     "phone": "555-555-5555",
@@ -49,7 +49,7 @@
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "who":[
       {
-        "description":"IAS is a platform for making technologies prevalent in the industry available to UTD students and alumnis."
+        "description":"The Intelligence Analytic Society is a student club working in coordination with the University of Texas at Dallas to advance the professional goals of our students aspiring to build their careers in Business Intelligence and Analytics. We act as an incubator for budding IT enthusiasts who seek to expand their prospects in the field of Business Intelligence and Analytics."
       }
     ],
     "vision":[

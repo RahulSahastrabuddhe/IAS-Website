@@ -72,13 +72,13 @@ header .banner-text {
 }
 header .banner-text h2 {
   font: 60px/1.1em "opensans-bold", sans-serif;
-  color: #fff;
+  color: rgb(190, 75, 75);
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
 }
 header .banner-text h3 {
   font: 18px/1.9em "librebaskerville-regular", serif;
-  color: #ddd;
+  color: #fff;
   margin: 0 auto;
   width: 70%;
 }
@@ -98,7 +98,6 @@ header .social {
   margin: 24px 0;
   padding: 0;
   font-size: 30px;
-  pointer-events: none;
 }
 header .social li {
   display: inline-block;
@@ -115,7 +114,7 @@ header .social li a:hover {
 /* scrolldown link */
 header .scrolldown a {
   position: absolute;
-  bottom: 30px;
+  bottom: 15px;
   left: 50%;
   margin-left: -29px;
   color: #fff;
@@ -133,7 +132,7 @@ header .scrolldown a {
   transition: all 0.3s ease-in-out;
 }
 header .scrolldown a:hover {
-  color: #0762f9;
+  color: rgb(190, 75, 75);
 }
 
 /* primary navigation
@@ -1175,6 +1174,10 @@ footer .social-links li:first-child {
 }
 #eventHost .main-col {
   padding-right: 10%;
+}
+
+#eventHost button {
+  margin: 20px;
 }
 
 .eachEvent {

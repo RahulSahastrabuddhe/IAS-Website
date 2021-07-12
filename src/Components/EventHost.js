@@ -2,57 +2,71 @@ import React, {Component} from "react";
 import Fade from "react-reveal";
 
 class EventHost extends Component{
-  constructor(props) {
-    super(props);
-    this.changeEventList = this.changeEventList.bind(this);
+  
+  testing(){
+    console.log("inside toaster");
+    //toast("Wow so easy!");
+
   }
-  changeEventList() {
-    
+  changeEventList(propsData, isRecent) {
+    if(isRecent)
+    {
+      return propsData.events.filter(person => person.eventDate > "03/28/2021").map(function (item) {
+        return (
+          <div className="row eachEvent" >
+            <div className="nine columns main-col">
+            <div className="row item">
+              <div className="twelve columns"><a href={item.url} target="_blank" rel="noreferrer"><p>{item.title}</p></a><p>{item.purpose}</p></div>
+            </div>
+            </div>
+                  <div className="three columns header-col">
+              <h5>{item.eventDate}</h5>
+            </div>
+          </div>
+        );
+      });
+    }
+    else 
+    {
+      return propsData.events.filter(person => person.eventDate < "03/28/2021").map(function (item) {
+        return (
+          <div className="row eachEvent" >
+            <div className="nine columns main-col">
+            <div className="row item">
+              <div className="twelve columns"><a href={item.url} target="_blank" rel="noreferrer"><p>{item.title}</p></a><p>{item.purpose}</p></div>
+            </div>
+            </div>
+                  <div className="three columns header-col">
+              <h5>{item.eventDate}</h5>
+            </div>
+          </div>
+        );
+      });
+    }
+   
   }
     render(){
 
         if (!this.props.data) return null;
-        //const eventHost = this.props.data.events;
-        const eventHost = this.props.data.events.map(function (item) {
-            return (
-              <div className="row eachEvent" >
-                  {/* <p>{item.title}</p>
-                  <p>{item.purpose}</p>
-                  <a href="https://www.linkedin.com/in/rahul-sahastrabuddhe/"><div style={{ textAlign: "right" }}>{item.eventDate}</div></a>
-                   */}
-                  
-            <div className="nine columns main-col">
-              <div className="row item">
-                <div className="twelve columns"><a href={item.url} target="_blank" rel="noreferrer"><p>{item.title}</p></a><p>{item.purpose}</p></div>
-              </div>
-            </div>
-                  <div className="three columns header-col">
-               <h5>{item.eventDate}</h5>
-            </div>
-              </div>
-            );
-          });
-
-
-       
+        let eventHost = this.changeEventList(this.props.data, true);
         return(
             <section id="eventHost">
                 <Fade left duration={1000} distance="40px">
                 <div className="row">
                     <div className="twelve columns collapsed">
-                    <h1>Events.</h1>
+                    <h1>Events</h1>
                     <div className="eventTime">
                     <ul id="nav" className="nav">
                     <li>
-                      <a className="smoothscroll" href="./" onClick={this.changeEventList()} >
-                        Upcoming
-                      </a>
+                      <button className="smoothscroll"  onClick={() => this.changeEventList(this.props.data, true)} >
+                        Recent
+                      </button>
                     </li>
 
                     <li>
-                      <a className="smoothscroll" href="./" onClick={this.changeEventList()}>
+                      <button className="smoothscroll" onClick={() => this.testing()}>
                       Past
-                      </a>
+                      </button>
                     </li>
                   </ul>
                     </div>
